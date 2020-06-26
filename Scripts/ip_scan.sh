@@ -8,7 +8,7 @@ else # If an IP is specified
 
 for ip in `seq 1 254`; do
 ping -c 1 $1.$ip | grep "64 bytes" | cut -d " " -f 4 | cut -d ":" -f 1 &
-pids[${i}]=$!
+pids[${i}]=$! # Store all pids in an array
 done
 
 # Wait for all pids to finish their jobs
