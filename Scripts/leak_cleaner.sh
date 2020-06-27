@@ -15,16 +15,13 @@ do
    
     for word2 in "${word[@]}"
     do
-    
-	if [[ "$word2" == *":"*]]
-	then
+if [[ "$word2" == *":"* ]] 
+then
 	touch $1".cleaned"
 	echo "$word2" >> $1."cleaned"
 	fi
-    
-    done
-done
-
+	done
+	done
 
 done < $1
 
