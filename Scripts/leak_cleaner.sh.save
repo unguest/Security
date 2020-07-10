@@ -1,0 +1,7 @@
+#!/usr/bash
+
+if [[ "$1" == "" ]]
+then
+echo "Usage :" $0 "<file_to_clean>"
+else
+while read line; ;done < company.txt
